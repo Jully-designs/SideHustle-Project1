@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.App{
+    background-color: #483434;
+    height: 100vh;
+}
+Nav{
+    padding: 40px;
+}
+h2{
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 36px;
+}
+.counterbody{
+    border-radius: 17px;
+    text-align: center;
+    background-color: #FFF3E4;
+    margin: 20vh auto;
+    height: 50vh;
+    padding: 40px;
+    width: 50vw;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    width: 15vw;
+    outline: none;
+}
+
+/* mobile */
+@media screen and (max-width: 1024px) {
+    .counterbody{
+        margin: 10vh auto;
+        height: 30vh;
+        padding: 20px;
+        width: 50vw;
+    }
+    button{
+        margin-top: 15px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 30vw;
+        outline: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .counterbody{
+        margin: 15vh auto;
+        height: 50vh;
+        padding: 20px;
+        width: 60vw;
+    }
+    button{
+        margin-top: 15px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 30vw;
+        outline: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .counterbody{
+        margin: 10vh auto;
+        height: 60vh;
+        padding: 20px;
+        width: 80vw;
+    }
+    button{
+        margin-top: 15px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 50vw;
+        outline: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .counterbody{
+        margin: 10vh auto;
+        height: 40vh;
+        padding: 20px;
+        width: 80vw;
+    }
+    button{
+        margin-top: 10px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 50vw;
+        outline: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .counterbody{
+        margin: 10vh auto;
+        height: 50vh;
+        padding: 20px;
+        width: 90vw;
+    }
+    button{
+        margin-top: 10px;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: 50vw;
+        outline: none;
+    }
+}
