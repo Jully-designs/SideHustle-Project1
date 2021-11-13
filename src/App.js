@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <PageLayout />
-      {/* <Nav />
+      <Nav />
       <div className="counterbody">
         <Heading title={"Counter App"}/>
         <h2>{increment}</h2>
@@ -32,7 +32,7 @@ function App() {
           <button onClick= {updateDecrement}>Decrement</button>
           <button onClick= {updateReset}>Reset</button>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
