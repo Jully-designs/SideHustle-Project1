@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import './App.css';
-import Heading from './Components/Heading';
-import Nav from './Components/Nav';
 import PageLayout from './HOC/PageLayout';
+import Body from './Components/Body';
 
 function App() {
   const[increment, setIncrement] = useState(0);
@@ -19,21 +18,16 @@ function App() {
   const updateReset = () => {                                                     
     setIncrement(0);
   }
+  useEffect(() => {
+    alert("A click was made");
+  }, [increment]);
   
   return (
-    <div className="App">
-      <PageLayout />
-      <Nav />
-      <div className="counterbody">
-        <Heading title={"Counter App"}/>
-        <h2>{increment}</h2>
-        <div className="buttons">
-          <button onClick= {updateIncrement}>Increment</button>
-          <button onClick= {updateDecrement}>Decrement</button>
-          <button onClick= {updateReset}>Reset</button>
-        </div>
-      </div>
-    </div>
+    <Fragment classname="App">
+      <PageLayout>
+      <Body increment={increment} updateIncrement={updateIncrement} updateDecrement={updateDecrement} updateReset = {updateReset} />
+      </PageLayout>
+    </Fragment>
   );
 }
 
