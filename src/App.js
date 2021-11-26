@@ -18,9 +18,6 @@ function App() {
   const updateReset = () => {                                                     
     setIncrement(0);
   }
-  useEffect(() => {
-    alert("A click was made");
-  }, [increment]);
   
   return (
     <Fragment classname="App">
